@@ -14,7 +14,7 @@
   height: 60vh;
   /* height: auto; */
   padding: 30px 0;
-  background: url(/Images/strawberry-field.jpg);
+  background: url(./Images/strawberry-field.jpg);
   position: relative;
   background-size: cover;
   background-attachment:scroll;
