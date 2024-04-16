@@ -1019,17 +1019,17 @@ body {
 @keyframes animate{
   
   0%{
-    background-image: url(/Images/about1.jpg);
+    background-image: url(./Images/about1.jpg);
     
   }
   25%{
-    background-image: url(/Images/about2.jpg);
+    background-image: url(./Images/about2.jpg);
   }
   50%{
-    background-image: url(/Images/about3.jpg);
+    background-image: url(./Images/about3.jpg);
   }
   100%{
-    background-image: url(/Images/about4.jpg);
+    background-image: url(./Images/about4.jpg);
   }
 }
 .waves{
