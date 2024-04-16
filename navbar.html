@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-6e9Y8K6eT4FsH6FAPxSc/HAaCm3ZgxXE+4LxjJ6Q23y4W1cz0fe6jpY7d2hpkJq0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4Fp4M/Eoqo4Pkg0pSwg5vXznug2zX4W1" crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-ZJQLqdJU+nJr9ddPnOW+X4eQFJ2b9I7PizTugOeF3MLy5Q3SSTKPDAC5rZz67GwC" crossorigin="anonymous">
+  
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    
+    >
+
+  
+  
+</head>
+<body>
+  
+
+  <nav class="navbar navbar-expand-lg  nav fixed-top ">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand navcontent " href="#"><img src="/Images/logo4.png" alt="jpg" id="logo">ORGO</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav">
+          <li class="nav-item  navli">
+            <a class="nav-link navcontent  " aria-current="page" href="index.html" >Home</a>
+          </li>
+          
+        
+         
+  
+     
+          <li class="nav-item  navli">
+            <a class="nav-link navcontent " href="aboutus.html">AboutUs</a>
+          </li>
+          <li class="nav-item  navli">
+            <a class="nav-link navcontent  " aria-current="page" href="contactus.html" >Contact Us</a>
+          </li>
+  
+          <li class="nav-item dropdown  no-arrow">
+            <!-- <a class="nav-link dropdown-toggle navcontent name-profile  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user-plus  fa-fw"></i> profile
+            </a> -->
+            <a class="nav-link  navcontent  dropdown-toggle  profile-name" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              <span >Shop</span>
+            </a>
+          
+            <ul class="dropdown-menu  profile  ">
+           
+              <li><a class="dropdown-item  btn-login navli" href="fruits.html">Fruits</a></li>
+              
+              <li><a class="dropdown-item btn-login navli" href="vegitables.html">Vegitables</a> </li>
+              <li><a class="dropdown-item btn-login navli" href="seeds.html">Seeds</a> </li>
+              <li><a class="dropdown-item btn-login navli" href="aggricultural.html">aggricultural</a> </li>
+            </ul>
+          </li>
+          
+        </ul>
+        
+  
+        
+        
+        </li>
+        
+  
+  
+        <li class="nav-item  navli">
+          <button type="button" class="btn btn text-light wishlist" onclick="updateCartDisplay()" >
+            <i class="fas fa-heart wishlist"></i> <!-- Wishlist icon -->
+            <span    id="wishlist-button">Wishlist</span>
+          </button>
+         
+        </li>
+  
+  
+       
+   
+    
+         
+       <!-- <button type="button" class="btn btn text-light wishlist " onclick="toggleCart()">
+     <i class="fas fa-heart wishlist"></i> 
+  <span class="wishlist" >Wishlist</span>
+  </button> --> 
+  
+  
+  
+          <li class="nav-item dropdown  no-arrow navli">
+             <a class="nav-link dropdown-toggle navcontent name-profile  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user-plus  fa-fw"></i> profile
+            </a> 
+            <!-- <a class="nav-link dropdown-toggle navcontent  profile-name" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              <i class="fas fa-user-plus fa-fw"></i>  <span class="profile-name">profile</span>
+          </a>-->
+            
+            <ul class="dropdown-menu profile">
+           
+              <li><a class="dropdown-item btn-login" href="loginpage.html"> <i  class="fas fa-sign-in-alt icon-login"></i>Login</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item btn-login" href="form.html"><i class="fas fa-user-plus  fa-fw icon-signup"></i>SignUp</a> </li>
+             <li> </li>
+            </ul>
+          </li>
+       
+        </ul>
+  
+        <li class="nav-item  navli">
+          
+        <button class="btn btn-outline-success search_btn"> <i class="fas fa-search search-icon "></i>Search</button>
+       
+         
+        </li>
+       
+      
+        <div class="search_container"></div>
+  
+          <!-- <a class="dropdown-item" href="#">  <i  class="fas fa-sign-in-alt "></i>Login</a> -->
+      </div>
+    </div>
+    
+   
+  
+  
+  </nav> 
+
+    
+
+  
+<!-- 
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+<!-- <script src="nav.js"></script>
+<script src="home.js"></script> -->
+ 
+
+
+<script src="home.js"></script>    
+
+<!-- <script src="nav.js"></script>  -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+       
+           
+</body>
+</html>

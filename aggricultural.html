@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORGO</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-6e9Y8K6eT4FsH6FAPxSc/HAaCm3ZgxXE+4LxjJ6Q23y4W1cz0fe6jpY7d2hpkJq0" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar-container"></div>
+
+  <div id="modal-container" class="modal">
+    <div id="shopping-cart-overlay" class="overlay">
+      <div class="card" style="width: 30rem;">
+        <div class="card-header">
+          <h3>Shopping Cart</h3>
+        </div>
+        <ul class="list-group list-group-flush" id="cart-items" >
+           
+          </ul>
+          <div class="card-body">
+            <h5>Total Price: <span id="total-price">&#8377;0.00/-</span></h5>
+            <button onclick="closeShoppingCard()" id="closebtn"  class="btn btn-outline-danger cross_btn btncros">✖</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- productus  -->
+
+    <div class="products">
+        <div class="latest">
+            <div class="heading3">
+                <h1>aggricultural crop</h1>
+                <p>Our organic garden is the best choice for a healthy lifestyle. Quality.</p>
+            </div>
+            
+            <div class="main">
+                <div class="product-card">
+                  <div class="descount">-35%</div>
+                    <div class="img-card">
+                        <img src="/Images/crop1.jpg" alt="">
+                    </div>
+                    <h2 class="fruitsname">rise</h2>
+                    <div class="rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt "></i>
+                    </div>
+                    <div class="price">
+                        <h2>&#8377;120.00/-</h2>
+                        <del>150.00/-</del>
+                    </div>
+                    <div>
+                      <button  class="btn7">by now</button>
+                      <button class="btn8">add to cart</button>
+                      <!-- <a href="" class="btn7" style="display: block;">add to card</a> -->
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                  <div class="descount">-35%</div>
+                    <div class="img-card">
+                      <img src="/Images/crop2.png" alt="">
+                    </div>
+                    <h2 class="fruitsname">corn</h2>
+                    <div class="rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>&#8377;130.00/-</h2>
+                        <del>150.00/-</del>
+                    </div>
+                    <div>
+                      <button  class="btn7">by now</button>
+                      <button class="btn8">add to cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="product-card">
+                  <div class="descount">-35%</div>
+                    <div class="img-card">
+                      <img src="/Images/crop3.jpg" alt="">
+                    </div>
+                    <h2 class="fruitsname">soyabean</h2>
+                    <div class="rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>&#8377;115.00/-</h2>
+                        <del>150.00/-</del>
+                    </div>
+                    <div>
+                      <button  class="btn7">by now</button>
+                      <button class="btn8">add to cart</button>
+                    </div>
+                </div>
+                
+
+                <div class="product-card">
+                  <div class="descount">-35%</div>
+                    <div class="img-card">
+                      <img style="height: 110%;" src="/Images/crop4.png" alt="">
+                    </div>
+                    <h2 class="fruitsname">cotton</h2>
+                    <div class="rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>&#8377;110.00/-</h2>
+                        <del>150.00/-</del>
+                    </div>
+                    <div>
+                      <button  class="btn7">by now</button>
+                      <button class="btn8">add to cart</button>
+                    </div>
+                    </div>
+
+
+              
+
+               
+                <div class="product-card">
+                  <div class="descount">-35%</div>
+                    <div class="img-card">
+                      <img src="/Images/crop5.jpg" alt="">
+                    </div>
+                    <h2 class="fruitsname">sugarcane</h2>
+                    <div class="rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>&#8377;150.00/-</h2>
+                        <del>150.00/-</del>
+                    </div>
+                    <div>
+                      <button  class="btn7">by now</button>
+                      <button class="btn8">add to cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="product-card">
+                  <div class="descount">-35%</div>
+                    <div class="img-card">
+                      <img src="/Images/crop6.png" alt="">
+                    </div>
+                    <h2 class="fruitsname">groundnut</h2>
+                    <div class="rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>&#8377;135.00/-</h2>
+                        <del>150.00/-</del>
+                    </div>
+                    <div>
+                      <button  class="btn7">by now</button>
+                      <button class="btn8">add to cart</button>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                  <div class="descount">-35%</div>
+                    <div class="img-card">
+                      <img src="/Images/crop7.jpg" alt="">
+                    </div>
+                    <h2 class="fruitsname">chickpea</h2>
+                    <div class="rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>&#8377;125.00/-</h2>
+                        <del>150.00/-</del>
+                    </div>
+                    <div>
+                      <button  class="btn7">by now</button>
+                      <button class="btn8">add to cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="product-card">
+                  <div class="descount">-35%</div>
+                    <div class="img-card">
+                      <img src="/Images/crop8.jpg" alt="">
+                    </div>
+                    <h2 class="fruitsname">oat</h2>
+                    <div class="rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>&#8377;120.00/-</h2>
+                        <del>150.00/-</del>
+                    </div>
+                    <div>
+                      <button  class="btn7">by now</button>
+                      <button class="btn8">add to cart</button>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <div class="descount">-35%</div>
+                      <div class="img-card">
+                        <img src="/Images/crop9.jpg" alt="">
+                      </div>
+                      <h2 class="fruitsname">ginger</h2>
+                      <div class="rate">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="price">
+                          <h2>&#8377;125.00/-</h2>
+                          <del>150.00/-</del>
+                      </div>
+                      <div>
+                        <button  class="btn7">by now</button>
+                        <button class="btn8">add to cart</button>
+                      </div>
+                  </div>
+
+
+                  <div class="product-card">
+                    <div class="descount">-35%</div>
+                      <div class="img-card">
+                        <img src="/Images/crop10.jpg" alt="">
+                      </div>
+                      <h2 class="fruitsname">chilli</h2>
+                      <div class="rate">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="price">
+                          <h2>&#8377;125.00/-</h2>
+                          <del>150.00/-</del>
+                      </div>
+                      <div>
+                        <button  class="btn7">by now</button>
+                        <button class="btn8">add to cart</button>
+                      </div>
+                  </div>
+
+                  
+                  <div class="product-card">
+                    <div class="descount">-35%</div>
+                      <div class="img-card">
+                        <img src="/Images/crop11.webp" alt="">
+                      </div>
+                      <h2 class="fruitsname">mung beam</h2>
+                      <div class="rate">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="price">
+                          <h2>&#8377;125.00/-</h2>
+                          <del>150.00/-</del>
+                      </div>
+                      <div>
+                        <button  class="btn7">by now</button>
+                        <button class="btn8">add to cart</button>
+                      </div>
+                  </div> 
+                  
+                  <div class="product-card">
+                    <div class="descount">-35%</div>
+                      <div class="img-card">
+                        <img src="/Images/crop12.webp" alt="">
+                      </div>
+                      <h2 class="fruitsname">bajra</h2>
+                      <div class="rate">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="price">
+                          <h2>&#8377;125.00/-</h2>
+                          <del>150.00/-</del>
+                      </div>
+                      <div>
+                        <button  class="btn7">by now</button>
+                        <button class="btn8">add to cart</button>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container"></div>
+  
+    <div id="modal-container" class="modal">
+      <div id="shopping-cart-overlay" class="overlay">
+        <div class="card" style="width: 30rem;">
+          <div class="card-header">
+            <h3>Shopping Cart</h3>
+          </div>
+          <ul class="list-group list-group-flush" id="cart-items" >
+             
+            </ul>
+            <div class="card-body">
+              <h5>Total Price: <span id="total-price">&#8377;0.00/-</span></h5>
+              <button onclick="closeShoppingCard()" id="closebtn"  class="btn btn-outline-danger cross_btn btncros">✖</button>
+            </div>
+          </div>
+        </div>
+      </div>  
+    
+
+
+       
+  <script src="nav.js"></script>      
+
+  <script src="home.js">
+   
+  
+  </script>
+  
+  <script >
+    $(function () {
+   
+   $('.navbar-container').load('navbar.html');
+   $(".footer-container").load("footer.html");
+   
+   });
+     </script> 
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+<!-- 
+<script src="/nav.js"></script>
+
+    <script src="/home.js"></script>
+
+    <script >
+        $(function () {
+     
+     $('.navbar-container').load('navbar.html');
+     $(".footer-container").load("footer.html")
+     });
+       </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+</body>
+</html>

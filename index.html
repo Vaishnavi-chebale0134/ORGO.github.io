@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ORGO</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-6e9Y8K6eT4FsH6FAPxSc/HAaCm3ZgxXE+4LxjJ6Q23y4W1cz0fe6jpY7d2hpkJq0" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-ZJQLqdJU+nJr9ddPnOW+X4eQFJ2b9I7PizTugOeF3MLy5Q3SSTKPDAC5rZz67GwC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+ 
+ 
+
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  
+</head>
+<style>  </style>
+<body>
+
+  <!-- <div class="navbar-container"></div> -->
+  
+  
+<nav class="navbar navbar-expand-lg  nav fixed-top ">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    
+    
+    
+      <a class="navbar-brand navcontent " href="#"><img src="/Images/logo4.png" alt="jpg" id="logo">ORGO</a>
+     
+     
+     
+     
+     
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav">
+        <li class="nav-item  navli">
+          <a class="nav-link navcontent  " aria-current="page" href="index.html" >Home</a>
+        </li>
+        
+    
+   
+        <li class="nav-item  navli">
+          <a class="nav-link navcontent " href="aboutus.html">AboutUs</a>
+        </li>
+        <li class="nav-item  navli">
+          <a class="nav-link navcontent  " aria-current="page" href="contactus.html" >Contact Us</a>
+        </li>
+
+        <li class="nav-item dropdown  no-arrow navli">
+          <!-- <a class="nav-link dropdown-toggle navcontent name-profile  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-user-plus  fa-fw"></i> profile
+          </a> -->
+          <a class="nav-link  navcontent  dropdown-toggle  profile-name" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+            <span >Shop</span>
+          </a>
+        
+          <ul class="dropdown-menu  profile  ">
+         
+            <li><a class="dropdown-item  btn-login navli" href="fruits.html">Fruits</a></li>
+            
+            <li><a class="dropdown-item btn-login navli" href="vegitables.html">Vegitables</a> </li>
+            <li><a class="dropdown-item btn-login navli" href="seeds.html">Seeds</a> </li>
+            <li><a class="dropdown-item btn-login navli" href="aggricultural.html">aggricultural</a> </li>
+          </ul>
+        </li>
+        
+     
+
+      </ul>
+      
+      </li>
+      
+
+
+      <li class="nav-item  navli">
+        <button type="button" class="btn btn text-light wishlist" onclick="updateCartDisplay()" >
+          <i class="fas fa-heart wishlist"></i> <!-- Wishlist icon -->
+          <span    id="wishlist-button">Wishlist</span>
+        </button>
+       
+      </li>
+
+
+    
+
+     
+ 
+  
+       
+     <!-- <button type="button" class="btn btn text-light wishlist " onclick="toggleCart()">
+   <i class="fas fa-heart wishlist"></i> 
+<span class="wishlist" >Wishlist</span>
+</button> --> 
+
+
+
+        <li class="nav-item dropdown  no-arrow navli">
+           <a class="nav-link dropdown-toggle navcontent name-profile  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-user-plus  fa-fw"></i> profile
+          </a> 
+          <!-- <a class="nav-link dropdown-toggle navcontent  profile-name" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+            <i class="fas fa-user-plus fa-fw"></i>  <span class="profile-name">profile</span>
+        </a>-->
+          
+          <ul class="dropdown-menu profile">
+         
+            <li><a class="dropdown-item btn-login" href="loginpage.html"> <i  class="fas fa-sign-in-alt icon-login"></i>Login</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item btn-login" href="form.html"><i class="fas fa-user-plus  fa-fw icon-signup"></i>SignUp</a> </li>
+           <li> </li>
+          </ul>
+        </li>
+      </ul>
+
+     
+
+      <li class="nav-item  navli">
+        
+      <button class="btn btn-outline-success search_btn"> <i class="fas fa-search search-icon "></i>Search</button>
+     
+       
+      </li>
+ 
+    
+      
+     
+    
+      <div class="search_container"></div>
+
+        <!-- <a class="dropdown-item" href="#">  <i  class="fas fa-sign-in-alt "></i>Login</a> -->
+    </div>
+  </div>
+  
+ 
+
+
+</nav> 
+
+
+<!-- 
+<div class="card" style="width: 30rem;" id="shopping-cart-overlay">
+  <div class="card-header">
+      <h3>Shopping Cart</h3>
+  </div>
+  <ul class="list-group list-group-flush" id="cart-items">
+       Cart items will be dynamically added here 
+  </ul>
+  <div class="card-body">
+      <h5>Total Price: <span id="total-price">&#8377;0.00/-</span></h5>
+  </div>
+</div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="navbar-container"></div> -->
+
+
+
+
+
+
+
+
+<!-- <div class="modal-container" class="modal">
+  <div class="shopping-cart-overlay" class="overlay">
+    <div class="card" style="width: 30rem;">
+      <div class="card-header">
+        <h3>Shopping Cart</h3>
+      </div>
+      <ul class="list-group list-group-flush" class="cart-items" >
+         
+        </ul>
+        <div class="card-body">
+          <h5>Total Price: <span class="total-price">&#8377;0.00/-</span></h5>
+          <button onclick="closeShoppingCard()" class="closebtn"  class="btn btn-outline-danger cross_btn btncros">✖</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  
+<div id="modal-container" class="modal">
+  <div id="shopping-cart-overlay" class="overlay">
+    <div class="card" style="width: 30rem;">
+      <div class="card-header">
+        <h3>Shopping Cart</h3>
+      </div>
+      <ul class="list-group list-group-flush" id="cart-items" >
+         
+        </ul>
+        <div class="card-body">
+          <h5>Total Price: <span id="total-price">&#8377;0.00/-</span></h5>
+          <button onclick="closeShoppingCard()" id="closebtn"  class="btn btn-outline-danger cross_btn btncros">✖</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+
+
+  
+
+
+   <div class="slider-container">
+  
+  <img src="/Images/slider1.jpg" alt="" class="slide-1">
+  <img src="/Images/slider2.jpg" alt="" class="slide-2">
+  <img src="/Images/slider3.jpg" alt="" class="slide-3">
+  <img src="/Images/slider4.jpg" alt="" class="slide-4">
+  <img src="/Images/slider5.jpg" alt="" class="slide-5">
+
+</div>
+
+
+<!-- <img src="/Images/slider1.jpg" alt="" class="slide-1">
+<img src="/Images/slider2.jpg" alt="" class="slide-2">
+<img src="/Images/slider3.jpg" alt="" class="slide-3">
+<img src="/Images/slider4.jpg" alt="" class="slide-4">
+<img src="/Images/slider5.jpg" alt="" class="slide-5">
+<br> -->
+
+<!-- content -->
+<!-- <div class="heading">
+    <span class="s1">W</span>
+    <span class="s2">E</span>
+    <span class="s3">L</span>
+    <span class="s4">C</span>
+    <span class="s5">O</span>
+    <span class="s6">M</span>
+    <span class="s7">E</span>
+    <span style="margin-left: 3%;" class="s8">T</span>
+    <span class="s9">O</span>
+    <span style="margin-left: 3%;" class="s10">O</span>
+    <span class="s11">R</span>
+    <span class="s12">G</span>
+    <span class="s13">A</span>
+    <span class="s14">N</span>
+    <span class="s15">I</span>
+    <span class="s16">C</span>
+    <span style="margin-left: 3%;" class="s17">F</span>
+    <span class="s18">A</span>
+    <span class="s19">R</span>
+    <span class="s20">M</span>
+    <span class="s21">I</span>
+    <span class="s22">N</span>
+    <span class="s23">G</span>
+  </div>
+  <br> -->
+        
+
+
+
+<div class="homeheading"><h1>WELCOME TO ORGANIC FARMING</h1>
+  <h2>
+    "Rooted in Nature, Nourishing Lives: Join Our Organic Oasis!"</h2>
+</div>
+
+
+         <!-- services -->
+         <div class="servcontainer">
+          <div class="servcontent">
+            <br>
+            <p>what we do</p>
+            <h1>SERVICES WE OFFER</h1>
+          </div>
+          <br><br>
+         <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="/Images/service1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">fresh vegetables</h5>
+                <p class="card-text">There are many variations of passages of available, but the majority have suffered.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/Images/service2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">agriculture products</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/Images/service3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">organic products</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          
+
+  <!-- why choose us -->
+
+      <div class="card-why-us">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/Images/why-us.jpg"  class="img-fluid rounded-start fixed-image"alt="..." >
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <p style="color: green; font-weight: bolder;">WHY CHOOSE US</p>
+            <h5  class="card-title">We Are Supply For High Quilty Food That Proceing To Work Farmer</h5>
+            <div>
+              <p style="color:rgb(53, 145, 145); font-weight: bolder; font-size: 20px; margin-top: 30px;" class="card-text">High Quilty Food</p>
+              <p class="card-text"><small class="text-body-secondary">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this.</small></p>
+            </div>
+            <div>
+              <p style="color: rgb(53, 145, 145); font-weight: bolder; font-size: 20px; margin-top: 30px;" class="card-text">Natural Food</p>
+              <p class="card-text"><small class="text-body-secondary">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this.</small></p>
+            </div>
+            <div>
+              <p style="color: rgb(53, 145, 145); font-weight: bolder; font-size: 20px; margin-top: 30px;" class="card-text">Fresh Food</p>
+             <p class="card-text"><small class="text-body-secondary">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
+<!-- 
+    <div class="card card-why-us">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/Images/why-us.jpg" class="img-fluid rounded-start fixed-image" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <p style="color: green; font-weight: bolder;">WHY CHOOSE US</p>
+            <h5 class="card-title">We Are Supplying High-Quality Food That is Processed by Working Farmers</h5>
+    
+            <div class="why-us-item">
+              <p class="card-text why-us-heading">High-Quality Food</p>
+              <p class="card-text why-us-description">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this.</p>
+            </div>
+    
+            <div class="why-us-item">
+              <p class="card-text why-us-heading">Natural Food</p>
+              <p class="card-text why-us-description">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this.</p>
+            </div>
+    
+            <div class="why-us-item">
+              <p class="card-text why-us-heading">Fresh Food</p>
+              <p class="card-text why-us-description">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
+
+
+
+
+      
+
+
+          <!-- productus  -->
+
+         
+          <div class="products">
+            <div class="latest">
+                <div class="heading3">
+                    <h1>our products</h1>
+                    <p>Our organic garden is the best choice for a healthy lifestyle. Quality.</p>
+                </div>
+                
+                <div class="main">
+                    <div class="product-card">
+                      <div class="descount">-35%</div>
+                        <div class="img-card">
+                            <img src="/Images/product1.jpg" alt="">
+                        </div>
+                        <h2 class="fruitsname">grapes</h2>
+                        <div class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <div class="price">
+                            <h2>&#8377;120.00/-</h2>
+                            <del>150.00/-</del>
+                        </div>
+                        <div>
+                          <button  class="btn8">by now</button>
+                          <button class="btn7">add to cart</button>
+                          <!-- <a href="" class="btn7" style="display: block;">add to card</a> -->
+                        </div>
+                    </div>
+    
+
+                    <div class="product-card">
+                      <div class="descount">-35%</div>
+                        <div class="img-card">
+                          <img src="/Images/product2.webp" alt="">
+                        </div>
+                        <h2 class="fruitsname">tomato</h2>
+                        <div class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">
+                            <h2>&#8377;130.00/-</h2>
+                            <del>150.00/-</del>
+                        </div>
+                        <div>
+                          <button  class="btn8">by now</button>
+                          <button class="btn7">add to cart</button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="product-card">
+                      <div class="descount">-35%</div>
+                        <div class="img-card">
+                          <img src="/Images/product3.png" alt="">
+                        </div>
+                        <h2 class="fruitsname">chilli</h2>
+                        <div class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">
+                            <h2>&#8377;115.00/-</h2>
+                            <del>150.00/-</del>
+                        </div>
+                        <div>
+                          <button  class="btn8">by now</button>
+                          <button class="btn7">add to cart</button>
+                        </div>
+                    </div>
+                    
+
+                    <div class="product-card">
+                      <div class="descount">-35%</div>
+                        <div class="img-card">
+                          <img style="height: 110%;" src="/Images/product4.jpg" alt="">
+                        </div>
+                        <h2 class="fruitsname">sugarcane</h2>
+                        <div class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">
+                            <h2>&#8377;110.00/-</h2>
+                            <del>150.00/-</del>
+                        </div>
+                        <div>
+                          <button  class="btn8">by now</button>
+                          <button class="btn7">add to cart</button>
+                        </div>
+                        </div>
+
+
+                  
+
+                   
+                    <div class="product-card">
+                      <div class="descount">-35%</div>
+                        <div class="img-card">
+                          <img src="/Images/product5.jpg" alt="">
+                        </div>
+                        <h2 class="fruitsname">cotton</h2>
+                        <div class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">
+                            <h2>&#8377;150.00/-</h2>
+                            <del>150.00/-</del>
+                        </div>
+                        <div>
+                          <button  class="btn8">by now</button>
+                          <button class="btn7">add to cart</button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="product-card">
+                      <div class="descount">-35%</div>
+                        <div class="img-card">
+                          <img src="/Images/product6.jpg" alt="">
+                        </div>
+                        <h2 class="fruitsname">sorghum</h2>
+                        <div class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">
+                            <h2>&#8377;135.00/-</h2>
+                            <del>150.00/-</del>
+                        </div>
+                        <div>
+                          <button  class="btn8">by now</button>
+                          <button class="btn7">add to cart</button>
+                        </div>
+                    </div>
+
+    
+                    <div class="product-card">
+                      <div class="descount">-35%</div>
+                        <div class="img-card">
+                          <img src="/Images/product7.png" alt="">
+                        </div>
+                        <h2 class="fruitsname">ginger</h2>
+                        <div class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">
+                            <h2>&#8377;125.00/-</h2>
+                            <del>150.00/-</del>
+                        </div>
+                        <div>
+                          <button  class="btn8">by now</button>
+                          <button class="btn7">add to cart</button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="product-card">
+                      <div class="descount">-35%</div>
+                        <div class="img-card">
+                          <img src="/Images/product8.png" alt="">
+                        </div>
+                        <h2 class="fruitsname">maize</h2>
+                        <div class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">
+                            <h2>&#8377;120.00/-</h2>
+                            <del>150.00/-</del>
+                        </div>
+                        <div>
+                          <button  class="btn8">by now</button>
+                          <button class="btn7" >add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+     
+<div class="reviews-tag">
+  <h1 class="revheading">reviews</h1>
+
+  <div class="review-box">
+
+      <div class="review-card">
+          <i class="fa fa-solid fa-quote-right"></i>
+          <div class="card-top">
+              <img src="/Image/review_1.png" alt="">
+          </div>
+          <div class="cardr">
+              <h2>Vishal Rajguru</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quibusdam repellat quasi quis neque sequi quisquam consequatur veniam, tenetur iure dolore tempore error facere libero. Fuga repudiandae recusandae et consectetur.</p>
+              <div class="review-icon">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              </div>
+          </div>
+      </div>
+
+      <div class="review-card">
+          <i class="fa fa-solid fa-quote-right"></i>
+          <div class="card-top">
+              <img src="/Image/review_2.png" alt="">
+          </div>
+          <div class="cardr">
+              <h2>Pooja Chaoudhari</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quibusdam repellat quasi quis neque sequi quisquam consequatur veniam, tenetur iure dolore tempore error facere libero. Fuga repudiandae recusandae et consectetur.</p>
+              <div class="review-icon">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              </div>
+          </div>
+      </div>
+
+      <div class="review-card">
+          <i class="fa fa-solid fa-quote-right"></i>
+          <div class="card-top">
+              <img src="/Image/review_3.png" alt="">
+          </div>
+          <div class="cardr">
+              <h2>martin
+              </h2>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quibusdam repellat quasi quis neque sequi quisquam consequatur veniam, tenetur iure dolore tempore error facere libero. Fuga repudiandae recusandae et consectetur.</p>
+              <div class="review-icon">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              </div>
+          </div>
+      </div>
+
+      <div class="review-card">
+          <i class="fa fa-solid fa-quote-right"></i>
+          <div class="card-top">
+              <img src="/Image/review_4.png" alt="">
+          </div>
+          <div class="cardr">
+              <h2>Rohan Rajguru
+              </h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quibusdam repellat quasi quis neque sequi quisquam consequatur veniam, tenetur iure dolore tempore error facere libero. Fuga repudiandae recusandae et consectetur.</p>
+              <div class="review-icon">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+          <!--Slogan-->
+          <div class="slogo">
+    <div class="slogan">
+      <div class="content">
+          <div class="heading2">
+              <h1>PROVIDE YOU THE HIGHEST QUALITY PRODUCTS THAT MEETS YOUR EXPECTATION</h1>
+              <p>Adipisie cing elit sed eiusmod tempor on labore et dolore. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+              <a href="" class="btn btn btn-outline-white search_btn">discover More</a>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+          <!-- Footer -->
+
+          <footer>
+
+         
+            <div class="ft">
+                <div class="fter" style="flex-wrap: wrap;">
+                    <div class="s9">
+                        <div class="logofooter">orgo</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio aperiam consequuntur!</p> 
+                        <div class="social-icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>                  
+                    </div>
+                    <div class="best-category">
+                      <h2>best category</h2>
+                      <li>vegetables</li>
+                      <li>agriculture crop</li>
+                      <li>food</li>
+                      <li></li>
+                  </div>
+  
+                    <div class="imp-links">
+                        <h2>important links</h2>
+                        <li><a href="home.html">home</a></li>
+                        <li><a href="seeds.html">category</a></li>
+                        <li><a href="vegitables.html">products</a></li>
+                        <li><a href="contactus.html">contact</a></li>
+                    </div>
+                    <div class="contact-us">
+                        <h2>contact us</h2>
+                        <li><span>Address:</span> Seven Mentor, pune.</li>
+                        <li><span>Email-Id:</span> orgo@gmail.com</li>
+                        <li><span>Phone:</span> 9527018032</li>
+                        <li><span>mobile:</span> 9607109087</li>
+                    </div>
+                </div>
+                
+                <div class="copy">
+                    <hr>
+                    <p>Created by <span>Pata nahi</span> | All right reserved.!</p>
+                </div>
+            </div>
+        </footer>    
+          <!-- Your content goes here -->
+  </div>
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+
+        <script src="home.js"></script>
+ 
+
+      <!-- <script src="nav.js "></script>       -->
+
+
+
+
+
+<script >
+	$(function () {
+ 
+ $('.navbar-container').load('navbar.html');
+ 
+ });
+   </script> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
